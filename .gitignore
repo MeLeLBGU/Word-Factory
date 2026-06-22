@@ -1,4 +1,4 @@
 notebooks/
 tests/
-reproduce.py/
+reproduce.py
 __pycache__/
