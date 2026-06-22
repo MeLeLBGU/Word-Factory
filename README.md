@@ -5,7 +5,8 @@ Code and data for **"Inside the LLM Word Factory"** (Busigin & Pinter), a mechan
 The experiments use **activation patching** on controlled pairs of artificially split words to separate the contribution of attention from that of the MLP, and a **linear probe** to predict whether detokenization will succeed from early-layer activations alone. 
 Everything runs on [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) `HookedTransformer` models.
 
-## [image goes here]
+<img width="1120" height="486" alt="image" src="https://github.com/user-attachments/assets/fe15757b-a9ed-46b2-ad26-2d1d693446e9" />
+
 
 ## What the code does
 
