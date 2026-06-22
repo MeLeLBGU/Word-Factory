@@ -1,0 +1,16 @@
+# Inside the LLM Word Factory - runtime dependencies.
+# Tested with Python 3.10–3.12.
+#
+# transformer_lens pins the rest of the stack (torch, numpy, etc.),
+# so install it first and let it resolve those. 
+
+transformer_lens>=2.0
+torch>=2.1
+numpy>=1.24
+pandas>=2.0            # activation_patching builds index_df frames
+scikit-learn>=1.3      # probing: StratifiedGroupKFold, roc_auc_score
+datasets>=2.14         # probing: WikiText-103 for the in-context setting
+tqdm>=4.65
+
+# Only needed if you generate the paper figures yourself:
+# matplotlib>=3.7
