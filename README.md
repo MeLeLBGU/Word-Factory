@@ -1,6 +1,6 @@
 # Inside the LLM Word Factory
 
-Code and data for **"Inside the LLM Word Factory"** (Busigin & Pinter), a mechanistic study of *detokenization* - how transformer language models reconstruct a single word-level representation from the subword fragments a tokenizer produces.
+Code and data for **"Inside the LLM Word Factory"** (Busigin & Pinter, Findings of EMNLP 2026), a mechanistic study of *detokenization* - how transformer language models reconstruct a single word-level representation from the subword fragments a tokenizer produces.
 
 The experiments use **activation patching** on controlled pairs of artificially split words to separate the contribution of attention from that of the MLP, and a **linear probe** to predict whether detokenization will succeed from early-layer activations alone. 
 Everything runs on [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) `HookedTransformer` models.
@@ -88,13 +88,15 @@ The probe depths are mirrored in `probing.PAPER_PROBE_LAYERS`.
 ## Citation
 
 ```bibtex
-@misc{busigin2026wordfactory,
+@inproceedings{busigin2026wordfactory,
   title         = {Inside the LLM Word Factory},
   author        = {Busigin, Benzi and Pinter, Yuval},
   year          = {2026},
-  eprint        = {2606.08562},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL}
+  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2026",
+  month = oct,
+  year = "2026",
+  address = "Singapore",
+  publisher = "Association for Computational Linguistics"
 }
 ```
 
